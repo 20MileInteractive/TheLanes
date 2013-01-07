@@ -4,7 +4,7 @@ body {
 	color: #D3D3D3;
 }
 .container {
-	width: 928px;
+	width: 1010px;
 	margin: 0 auto;
 	background: url(images/shading.png);
 }
@@ -50,23 +50,97 @@ header {
 #main {
 	float: right;
 	width: 605px;
+	padding: 50px 100px 0 0;
+	height: 400px;
 	
 	#home_title {
 		background: url(images/opening.png);
 		width: 260px;
 		height: 449px;
 		float: left;
+		margin: 0;
 		span {
 			display: none;
 		}
 	}
+	#home_photos {
+		float: right;
+		width: 300px;
+		
+		img {
+			-moz-box-shadow:    0px 2px 4px rgba(0,0,0,0.50);
+			-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+			box-shadow:         0px 2px 4px rgba(0,0,0,0.50);
+			margin: 0 0 28px 0;
+		}
+	}
 }
+
 #events {
 	float: right;
 	width: 605px;
+	padding: 120px 100px 0px 70px;
+	background: url(images/pins.png) no-repeat left 70px;
+	
+	h1 {
+		float: left;
+		background: url(images/events.png);
+		width: 60px;
+		height: 187px;
+		margin: 0 35px 0 0;
+		
+		span {
+			display: none;
+		}
+	}
+	
+	ul {
+		list-style: none;
+		width: 245px;
+		float: left;
+		margin: 0;
+		padding: 0;
+		
+		h2 {
+			font-size: 1.5em;
+			color: #FFFFFF;
+			text-transform: uppercase;
+			margin: 0;
+			clear: both;
+		}
+		p {
+			font-size: 0.875em;
+			color: #898989;
+			line-height: 1.313em;
+			margin: 0;
+			
+			.date {
+				display: block;
+				float: left;
+				height: 5em;
+				margin-right: 10px;
+			}
+		}
+	}
+	#calendar {
+		width: 220px;
+		float: right;
+		background: url(images/calendar-bg.png);
+		font-size: .75em;
+		
+		td, th {
+			padding: 8px;
+			
+			a {
+				color: red;
+				text-decoration: none;
+			}
+		}
+	}
 }
 footer {
 	float: left;
+	clear: left;
 	width: 203px;
 	background: url(images/sidebar-bg.jpg);
 	margin: 0 0 0 -12px;
