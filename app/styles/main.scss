@@ -1,0 +1,156 @@
+body {
+	background: url(images/background.jpg) no-repeat center top #000;
+	font-family: GPMetroMedium;
+	color: #D3D3D3;
+}
+.container {
+	width: 928px;
+	margin: 0 auto;
+	background: url(images/shading.png);
+}
+header {
+	width: 219px;
+	float: left;
+	margin: 0 0 0 -12px;
+	
+	h1 {
+		margin: 0;
+		
+		a {
+			display: block;
+			background: url(images/logo.png);
+			width: 219px;
+			height: 216px;
+		}
+		span {
+			display: none;
+		}
+	}
+	
+	ul {
+		margin: 22px 0 0 0;
+		padding: 20px 20px 10px 20px;
+		background: url(images/sidebar-bg.jpg);
+		list-style: none;
+		text-transform: uppercase;
+		
+		li {
+			margin: 0 0 8px 0;
+		}
+		
+		a {
+			color: #646464;
+			text-decoration: none;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
+#main {
+	float: right;
+	width: 605px;
+	
+	#home_title {
+		background: url(images/opening.png);
+		width: 260px;
+		height: 449px;
+		float: left;
+		span {
+			display: none;
+		}
+	}
+}
+#events {
+	float: right;
+	width: 605px;
+}
+footer {
+	float: left;
+	width: 203px;
+	background: url(images/sidebar-bg.jpg);
+	margin: 0 0 0 -12px;
+	padding: 8px 8px 20px 8px;
+	text-transform: uppercase;
+	
+	p {
+		border-top: solid 1px #222222;
+		margin: 0;
+		padding: 5px 14px;
+		color: #646464;
+		font-size: 0.813em;
+		line-height: 1.313em;
+		
+		&#phone {
+			font-size: 1.313em;
+			line-height: 30px;
+			letter-spacing: 3px;
+			color: #7B7B7B;
+		}
+		
+		.days {
+			width: 90px;
+			display: inline-block;
+		}
+		.ampm {
+			font-size: .75em;
+		}
+	}
+	h3 {
+		border-top: solid 1px #222222;
+		padding: 20px 14px 0 14px;
+		font-size: 0.813em;
+		line-height: 1.313em;
+		color: #fff;
+		font-weight: normal;
+		margin: 0;
+	}
+	form {
+		margin: 0;
+		padding: 5px 14px;
+		
+		input[type="email"] {
+			background: url(images/email-bg.png);
+			border: none;
+			height: 14px;
+			width: 114px;
+			padding: 5px;
+			
+			placeholder {
+				color: #646464;
+			}
+		}
+		input[type="submit"] {
+			line-height: 13px;
+			padding: 5px;
+			width: 50px;
+			text-align: center;
+			background: #434242;
+			border: none;
+			display: inline-block;
+			text-transform: uppercase;
+		}
+	}
+	#social {
+		padding: 5px 14px;
+		
+		a {
+			display: block;
+			width: 82px;
+			height: 28px;
+			
+			&#facebook {
+				background: url(images/facebook.png);
+				float: left;
+			}
+			&#twitter {
+				background: url(images/twitter.png);
+				float: right;
+			}
+		}
+		
+		span {
+			display: none;
+		}
+	}
+}
